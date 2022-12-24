@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+import usecallback from './Inline';
+import Inline from './Inline';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 function App() {
+//   const countRef=useRef(0);
+//  //const [count,setcount]=useState(0)
+//   const someHandler=()=>{
+//    countRef.current++;
+//    console.log(`clicked ${countRef.current} times`)
+//   }
+//  console.log("i rendered")
+//  const inputRef=useRef()
+//  useEffect(()=>{
+//  // console.log(inputRef.current.focus())
+//   inputRef.current.focus();
+//  },[]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* {/* <Inline/>
+       <button onClick={someHandler}>clickme</button> 
+      <input ref={inputRef} type="text"/> */}
     </div>
   );
 }
